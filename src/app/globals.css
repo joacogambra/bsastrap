@@ -1,22 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+/* blanco: #fffcf4 */
+/* gris: #201c1c */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +15,221 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+/*TOP*/
+.banner{
+  width: 100%;
+  background-color: rgb(255, 252, 244);
+  height: 60vh;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.sidebar{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px;
+}
+
+.sidebar h1{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.sidebar span{
+  font-size: 16px;
+}
+
+.main{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-span{
+  padding-left: 60px;
+  padding-top: 30px;
+}
+
+.fecha-lugar{
+  font-size: 72px;
+  font-weight: 900;
+}
+
+.imagen-portada{
+  width: 1100px;
+  height: 550px;
+}
+
+/* mid shows grey*/
+
+.shows{
+  background-color: rgb(24, 24, 27);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.shows h4{
+  color: rgb(255, 252, 244);
+  font-size: 4.5rem;
+}
+
+.contain-show{
+  border-bottom: 1px solid rgb(255, 252, 244);
+  width: 1000px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contain-show:hover{
+  border-bottom: 1px solid rgb(132, 0, 255);
+}
+
+.contain-show div{
+  display: flex;
+  align-items: center;
+  gap: .4em;
+}
+
+.imagen-show{
+  margin-right: 40px;
+}
+
+.numero-dia,
+.place-lugar{
+  font-size: 36px;
+  color: rgb(255, 252, 244);
+}
+
+.dia-mes{
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 252, 244);
+}
+
+.buy-button{
+  background-color: #ffc4fc;
+  padding: 6px;
+  border-radius: 6mm;
+  width: 90px;
+  height: 40px;
+}
+
+
+/*merch*/
+
+.merch{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(255, 252, 244);
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.one{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+
+.get-merch{
+  background-color: #ffc4fc;
+  padding: 6px;
+  border-radius: 6mm;
+  width: 90px;
+}
+
+.container-merch-color{
+  width: 800px;
+  height: 800px;
+  background-color: #ffc4fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two{
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-top: -100px;
+  flex-direction: column;
+}
+
+.buzos h2{
+  font-size: 3rem;
+  line-height: 1;
+}
+.two img:hover{
+  transform: scale(1.1);
+  transition-duration: .3s;
+}
+
+.three{
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-top: -400px;
+  flex-direction: column;
+}
+
+.three img:hover,
+.four img:hover{
+  transform: scale(1.1);
+  transition-duration: .3s;
+}
+
+.four{
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-top: -340px;
+}
+
+/*prefooter*/
+
+.pre-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 172px;
+  color: #ffff;
+  background: rgb(24, 24, 27);
+  gap: 1rem;
+}
+
+.pre-footer h3{
+  font-size: 28px;
+}
+
+.pre-footer p{
+  font-weight: 100;
+}
+
+/*footer*/
+
+.footer{
+  width: 100%;
+  height: 204px;
+  color:rgb(24, 24, 27);
+  background-color: (255, 252, 244);
+  font-weight: 300;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
 }
